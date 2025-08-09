@@ -24,3 +24,12 @@ Quickly find and switch to open tabs or recent history with a floating search bo
 - `history` permission is required to search recent pages. Remove it from `manifest.json` if you only want to search tabs.
 
 
+### Credits
+- Note: completely generated with GPT-5 , and a little bit of instructions from me 🙂
+
+### Demo
+<video src="./Demo.mp4" controls width="720" preload="metadata"></video>
+
+- Video: [Watch the demo](./Demo.mp4)  
+- Screenshot above: place an image at `docs/demo.png` in this repo to render here.
+
