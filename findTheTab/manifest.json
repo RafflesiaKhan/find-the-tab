@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Find The Tab",
+  "description": "Quickly find and switch to tabs or open recent history via a floating search box.",
+  "version": "0.1.0",
+  "permissions": [
+    "tabs",
+    "history",
+    "windows",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Find The Tab"
+  },
+  "commands": {
+    "toggle-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+8",
+        "mac": "Command+Shift+8"
+      },
+      "description": "Toggle Find The Tab overlay"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "styles.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
+
+
