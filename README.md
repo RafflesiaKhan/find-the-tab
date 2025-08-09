@@ -31,5 +31,5 @@ Quickly find and switch to open tabs or recent history with a floating search bo
 <video src="./Demo.mp4" controls width="720" preload="metadata"></video>
 
 - Video: [Watch the demo](./Demo.mp4)  
-- Screenshot above: place an image at `docs/demo.png` in this repo to render here.
 
+- ![Demo](./docs/demo.png)
